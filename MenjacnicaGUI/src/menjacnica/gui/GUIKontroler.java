@@ -26,6 +26,12 @@ public class GUIKontroler {
 		});
 	}
 	
+	public static void prikaziDodajKurs() {
+		DodajKursGUI prozor = new DodajKursGUI();
+		prozor.setVisible(true);
+		prozor.setLocationRelativeTo(null);
+	}
+	
 	public static void otvoriFajl() {
 		JFileChooser fc = new JFileChooser();
 		int returnVal = fc.showOpenDialog(frame.getContentPane());
@@ -57,6 +63,10 @@ public class GUIKontroler {
 	
 	public static void ispisiPodatkeOAutoru() {
 		JOptionPane.showMessageDialog(frame, "Ime i prezime autora: Jovana Mitrovic", "Podaci o autoru", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public static void ispisi(String tekst) {
+		frame.ispisi(tekst);
 	}
 
 }
