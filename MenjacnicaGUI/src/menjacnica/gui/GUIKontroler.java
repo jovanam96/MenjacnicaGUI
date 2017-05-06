@@ -32,6 +32,12 @@ public class GUIKontroler {
 		prozor.setLocationRelativeTo(null);
 	}
 	
+	public static void prikaziObrisiKurs() {
+		ObrisiKursGUI prozor = new ObrisiKursGUI();
+		prozor.setVisible(true);
+		prozor.setLocationRelativeTo(null);
+	}
+	
 	public static void otvoriFajl() {
 		JFileChooser fc = new JFileChooser();
 		int returnVal = fc.showOpenDialog(frame.getContentPane());
