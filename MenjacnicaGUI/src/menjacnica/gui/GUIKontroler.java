@@ -38,6 +38,12 @@ public class GUIKontroler {
 		prozor.setLocationRelativeTo(null);
 	}
 	
+	public static void prikaziIzvrsiZamenu() {
+		IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI();
+		prozor.setVisible(true);
+		prozor.setLocationRelativeTo(null);
+	}
+	
 	public static void otvoriFajl() {
 		JFileChooser fc = new JFileChooser();
 		int returnVal = fc.showOpenDialog(frame.getContentPane());
